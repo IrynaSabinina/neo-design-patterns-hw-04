@@ -15,15 +15,25 @@
 ## 📦 Структура проєкту
 
 src/
+
 ├── singleton/
+
 │ ├── AppConfigService.ts
+
 │ └── main.ts
+
 ├── builder/
+
 │ ├── DocumentBuilder.ts
+
 │ └── main.ts
+
 └── prototype/
+
 ├── UserProfilePrototype.ts
+
 ├── UserProfile.ts
+
 └── main.ts
 
 ---
