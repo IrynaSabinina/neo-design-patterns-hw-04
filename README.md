@@ -16,25 +16,25 @@
 
 src/
 
-├── singleton/
+  ├── singleton/
 
-│ ├── AppConfigService.ts
+    ├── AppConfigService.ts
 
-│ └── main.ts
+    └── main.ts
 
-├── builder/
+  ├── builder/
 
-│ ├── DocumentBuilder.ts
+    ├── DocumentBuilder.ts
 
-│ └── main.ts
+    └── main.ts
 
-└── prototype/
+  └── prototype/
 
-├── UserProfilePrototype.ts
+    ├── UserProfilePrototype.ts
 
-├── UserProfile.ts
+    ├── UserProfile.ts
 
-└── main.ts
+    └── main.ts
 
 ---
 
@@ -68,6 +68,7 @@ console.log(config1 === config2); // true
 DocumentBuilder.ts: Клас із методами для додавання частин документа.
 
 main.ts: Приклад використання.
+### ✅ Результат
 
 === ACME Corporation — Report ===
 
@@ -87,24 +88,27 @@ UserProfilePrototype.ts: Інтерфейс з методом clone().
 UserProfile.ts: Клас з реалізацією та глибоким копіюванням.
 
 main.ts: Приклад клонування об’єкта.
-
+### ✅ Результат
+```ts
 const chief = new UserProfile(...);
 const deputy = chief.clone() as UserProfile;
 deputy.username = "Інший користувач";
 
 console.log(chief); // Не змінений
 console.log(deputy); // Незалежна копія
-
+```
 ---
 
 ## Запуск
 
 Встановити залежності:
-
+```ts
 npm install
+```
 
 Запустити приклади:
-
+```ts
 npx ts-node src/singleton/main.ts
 npx ts-node src/builder/main.ts
 npx ts-node src/prototype/main.ts
+```
